@@ -15,7 +15,6 @@ import PageLoader from './components/Loader/PageLoader'
 import EasterEgg from './components/EasterEgg'
 import history from './routerHistory'
 // Views included in the main bundle
-import Pools from './views/Pools'
 import Swap from './views/Swap'
 import {
   RedirectDuplicateTokenIds,
@@ -67,9 +66,6 @@ const App: React.FC = () => {
             <Route path="/pools">
               <Farms tokenMode/>
             </Route>
-            {/* <Route path="/juicy">
-              <Pools />
-            </Route> */}
             <Route path="/referral">
               <Referral />
             </Route>
@@ -92,30 +88,6 @@ const App: React.FC = () => {
             {/* Redirect */}
             <Route path="/pool">
               <Redirect to="/liquidity" />
-            </Route>
-            <Route path="/staking">
-              <Redirect to="/pools" />
-            </Route>
-            <Route path="/syrup">
-              <Redirect to="/pools" />
-            </Route>
-            <Route path="/igo">
-              <Redirect to="/" />
-            </Route>
-            <Route path="/lottery">
-              <Redirect to="/" />
-            </Route>
-            <Route path="/casino">
-              <Redirect to="/" />
-            </Route>
-            <Route path="/nft">
-              <Redirect to="/" />
-            </Route>
-            <Route path="/merch">
-              <Redirect to="/" />
-            </Route>
-            <Route path="/bets">
-              <Redirect to="/" />
             </Route>
             {/* 404 */}
             <Route component={NotFound} />

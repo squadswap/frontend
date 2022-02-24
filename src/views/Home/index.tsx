@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Heading, Text, BaseLayout } from '@pancakeswap/uikit'
+import { useQueryParam, StringParam } from 'use-query-params';
+import Cookies from 'universal-cookie';
+import { isAddress } from 'utils';
 
 import Page from 'components/Layout/Page'
 import FarmStakingCard from 'views/Home/components/FarmStakingCard'
@@ -12,6 +15,8 @@ import TwitterCard from 'views/Home/components/TwitterCard'
 import WinCard from 'views/Home/components/WinCard'
 import { useTranslation } from 'contexts/Localization'
 import StakingPairCard from './components/StakingPairCard'
+import rot13 from 'utils/encode'
+
 
 const Hero = styled.div`
   align-items: center;
@@ -79,6 +84,14 @@ const CTACards = styled(BaseLayout)`
 const Home: React.FC = () => {
   
   const { t } = useTranslation()
+  const cookies = new Cookies();
+  const [ref, setNum] = useQueryParam('ref', StringParam);
+
+  if(ref) {
+    if(isAddress(rot13(ref))) {
+      cookies.set("ref", ref)
+    }
+  }
   return (
     <Page>
       <Hero>
