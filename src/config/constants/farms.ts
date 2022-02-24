@@ -70,7 +70,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'wBNB',
     lpAddresses: {
       97: '',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16', /* 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c */
+      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     },
     isTokenOnly: true,
     token: tokens.wbnb,
