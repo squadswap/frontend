@@ -39,11 +39,6 @@ export const usePollFarmsWithUserData = (includeArchive = false) => {
   }, [includeArchive, dispatch, slowRefresh, account])
 }
 
-/**
- * Fetches the "core" farm data used globally
- * 0 = 251 = CAKE-BNB LP
- * 4 = 252 = BUSD-BNB LP
- */
 export const usePollCoreFarmData = () => {
   const dispatch = useAppDispatch()
   const { fastRefresh } = useRefresh()
