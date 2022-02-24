@@ -14,8 +14,8 @@ import EarnAPRCard from 'views/Home/components/EarnAPRCard'
 import TwitterCard from 'views/Home/components/TwitterCard'
 import WinCard from 'views/Home/components/WinCard'
 import { useTranslation } from 'contexts/Localization'
-import StakingPairCard from './components/StakingPairCard'
 import rot13 from 'utils/encode'
+import StakingPairCard from './components/StakingPairCard'
 
 
 const Hero = styled.div`
