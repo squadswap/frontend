@@ -389,7 +389,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
     <>
       <PageHeader>
         <Heading as="h1" scale="xxl" color="primary" mb="24px">
-          {/* {tokenMode ? <img src="/images/new/icon13.png" alt="Grinder" style={{"paddingRight":"10px", "height":"40px"}}/> : <img src="/images/new/icon12.png" alt="Cultivate" style={{"paddingRight":"10px", "height":"50px"}}/>} */}
           {tokenMode ? t('Pools') : t('Farms')}
         </Heading>
         <Heading scale="lg" color="text">
