@@ -71,7 +71,6 @@ const App: React.FC = () => {
             <Route path="/referral">
               <Referral />
             </Route>
-            {/* Using this format because these components use routes injected props. We need to rework them with hooks */}
             <Route exact strict path="/swap" component={Swap} />
             <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
             <Route exact strict path="/send" component={RedirectPathToSwapOnly} />
