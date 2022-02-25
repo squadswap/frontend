@@ -17,27 +17,6 @@ const Block = styled.div`
 `
 
 const CakeWinnings = () => {
-  // const { t } = useTranslation()
-  // const { account } = useWeb3React()
-  // // const { claimAmount } = useTotalClaim()
-  // const cakeAmount = getBalanceNumber(claimAmount)
-  // const cakePriceBusd = usePriceCakeBusd()
-  // const claimAmountBusd = new BigNumber(cakeAmount).multipliedBy(cakePriceBusd).toNumber()
-
-  // if (!account) {
-  //   return (
-  //     <Text color="textDisabled" style={{ lineHeight: '76px' }}>
-  //       {TranslateString(298, 'Locked')}
-  //     </Text>
-  //   )
-  // }
-
-  // return (
-  //   <Block>
-  //     <CardValue value={cakeAmount} lineHeight="1.5" />
-  //     {!cakePriceBusd.eq(0) && <CardBusdValue value={claimAmountBusd} decimals={2} />}
-  //   </Block>
-  // )
   return <></>
 }
 
