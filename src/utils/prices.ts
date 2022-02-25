@@ -60,7 +60,7 @@ export function computeSlippageAdjustedAmounts(
     [Field.OUTPUT]: trade?.minimumAmountOut(pct),
   }
 }
-
+ 
 export function warningSeverity(priceImpact: Percent | undefined): 0 | 1 | 2 | 3 | 4 {
   if (!priceImpact?.lessThan(BLOCKED_PRICE_IMPACT_NON_EXPERT)) return 4
   if (!priceImpact?.lessThan(ALLOWED_PRICE_IMPACT_HIGH)) return 3
@@ -68,7 +68,7 @@ export function warningSeverity(priceImpact: Percent | undefined): 0 | 1 | 2 | 3
   if (!priceImpact?.lessThan(ALLOWED_PRICE_IMPACT_LOW)) return 1
   return 0
 }
-
+ 
 export function formatExecutionPrice(trade?: Trade, inverted?: boolean): string {
   if (!trade) {
     return ''
