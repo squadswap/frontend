@@ -80,7 +80,6 @@ const CakeDataRow = () => {
       </StyledColumn>
       <StyledColumn>
         <Text color="textSubtle">{t('Current emissions')}</Text>
-
         <Heading scale="lg">{t('%cakeEmissions%/block', { cakeEmissions: emissionsPerBlock })}</Heading>
       </StyledColumn>
     </Grid>
