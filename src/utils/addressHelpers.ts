@@ -19,7 +19,7 @@ export const getMulticallAddress = () => {
 }
 export const getWbnbAddress = () => {
   return getAddress(tokens.wbnb.address)
-}
+} 
 export const getLotteryV2Address = () => {
   return getAddress(addresses.lotteryV2)
 }
