@@ -29,7 +29,7 @@ export const getInterestBreakdown = ({
   const aprAsDecimal = apr / 100
 
   // special handling for tokens like tBTC or BIFI where the daily token rewards for $1000 dollars will be less than 0.001 of that token
-  // and also cause rounding errors
+  // and also cause rounding errors 
   const isHighValueToken = Math.round(earningTokenPrice / 1000) > 0
   const roundingDecimalsNew = isHighValueToken ? 5 : 3
 
