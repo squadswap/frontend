@@ -106,7 +106,7 @@ const tokens = {
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     },
     decimals: 18,
-    projectLink: 'https://greenhouseswap.finance/',
+    projectLink: 'https://sqadswap.finance/',
   },
   sqad: {
     symbol: 'SQAD',
@@ -133,7 +133,7 @@ const tokens = {
       97: ''
     },
     decimals: 18,
-    projectLink: 'https://greenhouseswap.finance/',
+    projectLink: 'https://sqadswap.finance/',
   },
   cgold:{
     symbol: 'CGOLD',
@@ -142,7 +142,7 @@ const tokens = {
       97: ''
     },
     decimals: 18,
-    projectLink: 'https://greenhouseswap.finance/',
+    projectLink: 'https://sqadswap.finance/',
   },
   qbt: {
     symbol: 'QBT',
