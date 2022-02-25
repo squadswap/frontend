@@ -410,10 +410,6 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
               <Text textTransform="uppercase">{t('Sort by')}</Text>
               <Select
                 options={[
-                  // {
-                  //   label: t('Hot'),
-                  //   value: 'hot',
-                  // },
                   {
                     label: t('APR'),
                     value: 'apr',
